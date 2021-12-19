@@ -1,0 +1,66 @@
+.topbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 95%;
+	align-items: center;
+	margin-top: 3%;
+}
+.topBarList {
+	list-style-type: none;
+}
+.topBarList li {
+	display: inline;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.topBarList li:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.topBarList li a {
+	color: var(--primary);
+	text-decoration: none;
+	font-size: 1.2vw;
+}
+.logo {
+	width: 8%;
+}
+
+@media screen and (max-width: 400px) {
+	.topBarList {
+		margin-right: 13%;
+	}
+	.topBarList li {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	.topBarList li a {
+		color: var(--primary);
+		text-decoration: none;
+		font-size: 3.5vw;
+	}
+	.logo {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 850px) and (min-width: 400px) {
+	.topBarList {
+		margin-right: 10%;
+	}
+	.topBarList li {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	.topBarList li a {
+		color: var(--primary);
+		text-decoration: none;
+		font-size: 2.3vw;
+	}
+	.logo {
+		width: 15%;
+	}
+}

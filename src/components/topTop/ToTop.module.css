@@ -1,0 +1,29 @@
+.wrapperBtn {
+	text-align: center;
+	right: 2%;
+	bottom: 5%;
+	position: fixed;
+	z-index: 100;
+	padding: 1%;
+	border: 2px solid var(--primary);
+	border-radius: 30px;
+	background-color: var(--background);
+	transition: 0.2s ease-in-out;
+}
+.wrapperBtn:hover {
+	cursor: pointer;
+	background-color: var(--primary);
+	color: var(--background);
+	border: 1px solid var(--background);
+}
+
+@media screen and (max-width: 400px) {
+	.wrapperBtn {
+		padding: 3% 4%;
+	}
+}
+@media screen and (max-width: 850px) and (min-width: 400px) {
+	.wrapperBtn {
+		padding: 2% 2.75%;
+	}
+}

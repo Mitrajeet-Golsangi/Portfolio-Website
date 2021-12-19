@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/* Variables */
+:root {
+	--card-overlay-black: rgba(0, 0, 0, 0.53);
+	--project-card-title: #ffffff;
+	--placeholder-color: #b4b4b4;
+	--paragraph-color: #434343;
+	--skill-card-subheading: #525151;
+	--background: #f0f0f0;
+	--subheading-color: #707070;
+	--primary: #16c389;
+
+	--body-padding: 5%;
+	--paragraph-size: 1.2vw;
+	--prof-sep-heading-size: 4vw;
+	--font-weight: 350;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* reset */
+
+li,
+a,
+ul,
+p {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.base {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-left: var(--body-padding);
+	padding-right: var(--body-padding);
+
+	overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button {
+	background-color: white;
+	color: var(--primary);
+	padding: 1% 4%;
+	border-radius: 30px;
+	font-style: italic;
+	font-weight: var(--font-weight);
+	font-size: 1.5vw;
+	border: 2px solid var(--primary);
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 440px) {
+	:root {
+		--paragraph-size: 3.5vw;
+		--prof-sep-heading-size: 7vw;
+	}
+	.button {
+		padding: 2% 5%;
+		font-weight: 500;
+		font-size: 3.5vw;
+	}
+}
+@media screen and (max-width: 850px) and (min-width: 400px) {
+	:root {
+		--paragraph-size: 1.7vw;
+		--prof-sep-heading-size: 7vw;
+	}
 }

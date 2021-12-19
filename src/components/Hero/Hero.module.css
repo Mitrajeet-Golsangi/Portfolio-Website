@@ -1,0 +1,40 @@
+.heading {
+	color: var(--primary);
+	font-family: "Lato";
+	font-weight: 350;
+	font-size: 4vw;
+	text-align: center;
+}
+.subheading {
+	text-align: center;
+	font-size: 1.6vw;
+	font-style: Italic;
+	color: var(--subheading-color);
+}
+.heroImg {
+	display: grid;
+	place-items: center;
+	margin-top: 10%;
+}
+
+@media screen and (max-width: 400px) {
+	.heading {
+		margin-top: 30%;
+		font-size: 6vw;
+		width: 100%;
+	}
+	.subheading {
+		font-size: 3.2vw;
+	}
+	.heroImg {
+		margin-top: 40%;
+	}
+	.heroImg img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 850px) and (min-width: 400px) {
+	.heroImg img {
+		width: 50%;
+	}
+}

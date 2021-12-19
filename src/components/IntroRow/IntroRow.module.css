@@ -1,0 +1,53 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10%;
+}
+.rowRev {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10%;
+}
+
+.rowRev img,
+.row img {
+	width: 20vw;
+}
+.rowRev p,
+.row p {
+	text-align: center;
+	font-size: var(--paragraph-size);
+	font-style: italic;
+	color: var(--skill-card-subheading);
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper {
+		flex-direction: column;
+	}
+	.rowRev,
+	.row {
+		padding: 5%;
+		flex-direction: column-reverse;
+		margin-bottom: 5%;
+	}
+	.rowRev img,
+	.row img {
+		width: 80%;
+		margin-top: 5%;
+	}
+	.rowRev p,
+	.row p {
+		margin-bottom: 10%;
+	}
+}

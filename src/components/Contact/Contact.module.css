@@ -38,3 +38,34 @@ textarea {
 	font-size: var(--paragraph-size);
 	border: 2px solid var(--primary);
 }
+
+.popup {
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	border-radius: 10px;
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	background-color: lightgreen;
+	align-self: center;
+	margin-bottom: 10%;
+	color: var(--paragraph-color);
+	font-style: italic;
+	transition: 0.3s ease-in-out;
+	opacity: 0;
+	top: 5%;
+	left: 50%;
+	margin-left: -7.5%;
+}
+
+@media screen and (max-width: 400px) {
+	.popup {
+		width: 50%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		left: 50%;
+		margin-left: -25%;
+	}
+}

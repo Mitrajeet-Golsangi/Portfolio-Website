@@ -1,4 +1,3 @@
-import { createContext } from 'react';
 import { Element } from 'react-scroll';
 import './App.css';
 import Contact from './components/Contact/Contact';

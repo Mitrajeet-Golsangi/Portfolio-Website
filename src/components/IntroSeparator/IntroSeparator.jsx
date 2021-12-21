@@ -1,6 +1,6 @@
 import React from "react";
-import Separator from "../../assets/Subtraction 1.svg";
-import SeparatorMobile from "../../assets/Subtraction 3.svg";
+import { ReactComponent as Separator } from "../../assets/Subtraction 1.svg";
+import { ReactComponent as SeparatorMobile } from "../../assets/Subtraction 3.svg";
 import css from "./IntroSeparator.module.css";
 
 import { Element } from "react-scroll";
@@ -9,8 +9,8 @@ const IntroSeparator = () => {
 	return (
 		<Element id="about">
 			<div className={css.wrapper}>
-				<img src={Separator} alt="" className={css.separator} />
-				<img src={SeparatorMobile} alt="" className={css.separatorMobile} />
+				<Separator className={css.separator} />
+				<SeparatorMobile className={css.separatorMobile} />
 				<div className={css.textWrapper}>
 					<h4 className={css.heading}>Hey There !</h4>
 					<p className={css.body}>

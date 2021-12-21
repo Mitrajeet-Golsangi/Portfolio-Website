@@ -2,20 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Scrollbars from 'react-custom-scrollbars-2';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MoreProjects from './components/MoreProjects/MoreProjects';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Scrollbars
-      universal
-      autoHide
-      autoHideTimeout={1000}
-      style={{
-        width: "100vw",
-        height: "100vh",
-      }}> */}
-    <App />
-    {/* </Scrollbars> */}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="projects" element={<MoreProjects />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

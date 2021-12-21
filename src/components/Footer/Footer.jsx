@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/Logo.svg";
+import { ReactComponent as Logo } from "../../assets/Logo.svg";
 
 import Github from "../../assets/Social Media Profile Icons/GitHub_Logo.png";
 import HackerRank from "../../assets/Social Media Profile Icons/hackerrank.png";
@@ -11,7 +11,7 @@ import css from "./Footer.module.css";
 const Footer = () => {
 	return (
 		<div className={css.wrapper}>
-			<img src={Logo} alt="logo" className={css.logo} />
+			<Logo className={css.logo} />
 			<div className={css.row}>
 				<a
 					href="https://github.com/Mitrajeet-Golsangi"

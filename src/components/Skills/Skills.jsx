@@ -1,6 +1,6 @@
 import React from "react";
-import WebDev from "../../assets/webDev.svg";
-import FlutterDev from "../../assets/flutter dev.svg";
+import { ReactComponent as WebDev } from "../../assets/webDev.svg";
+import { ReactComponent as FlutterDev } from "../../assets/flutter dev.svg";
 
 import css from "./Skills.module.css";
 const SkillsCardWeb = () => {
@@ -44,7 +44,7 @@ const SkillsCardWeb = () => {
 					</ul>
 				</div>
 				<div className={css.col}>
-					<img src={WebDev} alt="Web Development" />
+					<WebDev />
 				</div>
 			</div>
 		</div>
@@ -82,7 +82,7 @@ const SkillsCardMobile = () => {
 					</ul>
 				</div>
 				<div className={css.col}>
-					<img src={FlutterDev} alt="Web Development" />
+					<FlutterDev />
 				</div>
 			</div>
 		</div>

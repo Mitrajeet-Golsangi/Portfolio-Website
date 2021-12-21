@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll/modules";
-import ContactImg from "../../assets/contact.svg";
+import { ReactComponent as ContactImg } from "../../assets/contact.svg";
 
 import css from "./Contact.module.css";
 
@@ -16,11 +16,7 @@ const Contact = () => {
 	return (
 		<Element id="contact">
 			<div className={css.wrapper}>
-				<img
-					src={ContactImg}
-					alt="Contact Me"
-					style={{ width: "60%", alignSelf: "center" }}
-				/>
+				<ContactImg style={{ width: "60%", alignSelf: "center" }} />
 				<form className={css.form}>
 					<input type="email" placeholder="User Email" />
 					<input id="subject" type="text" placeholder="Subject" />

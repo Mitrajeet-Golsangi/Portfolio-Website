@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 400px) {
 	.heading {
-		margin-top: 30%;
+		margin-top: 10%;
 		font-size: 6vw;
 		width: 100%;
 	}
@@ -27,14 +27,17 @@
 		font-size: 3.2vw;
 	}
 	.heroImg {
-		margin-top: 40%;
+		margin-top: -10%;
 	}
-	.heroImg img {
+	.heroImg svg {
 		width: 100%;
 	}
 }
 @media screen and (max-width: 850px) and (min-width: 400px) {
-	.heroImg img {
+	.heroImg svg {
 		width: 50%;
+	}
+	.heroImg {
+		margin-top: -10%;
 	}
 }

@@ -28,6 +28,9 @@
 .logo {
 	width: 8%;
 }
+#path815 {
+	fill: var(--primary);
+}
 
 @media screen and (max-width: 400px) {
 	.topBarList {

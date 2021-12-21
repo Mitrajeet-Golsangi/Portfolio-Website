@@ -1,18 +1,25 @@
 import React from "react";
-import Project from "../../assets/projects.svg";
-
-import MoneyManager from "../../assets/Image 1.svg";
-import LPG from "../../assets/LGP_GAS_Detection.svg";
-import GameDev from "../../assets/Image 2.svg";
-import FlutterSnips from "../../assets/Image 3.svg";
-import AQIPred from "../../assets/Image 4.svg";
+import { ReactComponent as Project } from "../../assets/projects.svg";
 
 import css from "./Projects.module.css";
 import { Element } from "react-scroll/modules";
+import { Link } from "react-router-dom";
+import ProjectModal from "../ProjectModal/ProjectsModal";
+import data from "./data";
 
-const ProjectsCard = ({ background, title }) => {
+export const ProjectsCard = ({ background, title, body }) => {
+	const [openModal, setOpenModal] = React.useState(false);
+
+	if (openModal) {
+		document.body.style.overflow = "hidden";
+	} else {
+		document.body.style.overflow = "scroll";
+	}
+
+	const toggleModal = () => setOpenModal((prev) => !prev);
 	return (
 		<div
+			onClick={toggleModal}
 			className={css.card}
 			style={{
 				background: `linear-gradient(var(--card-overlay-black), var(--card-overlay-black)), url('${background}')`,
@@ -24,6 +31,12 @@ const ProjectsCard = ({ background, title }) => {
 			<div className={css.headingWrapper}>
 				<p className={css.cardHeading}>{title}</p>
 			</div>
+			<ProjectModal
+				showModal={openModal}
+				title={title}
+				body={body}
+				img={background}
+			/>
 		</div>
 	);
 };
@@ -36,35 +49,21 @@ const Projects = () => {
 					No? That's Quite alright
 					<br /> Let me show you some of my work
 				</p>
-				<img src={Project} alt="Project" />
+				<Project />
 				<div className={css.layout}>
-					<ProjectsCard
-						className={css.gridItem}
-						background={MoneyManager}
-						title="Money Manager"
-					/>
-					<ProjectsCard
-						className={css.gridItem}
-						background={LPG}
-						title="LPG Gas Detection"
-					/>
-					<ProjectsCard
-						className={css.gridItem}
-						background={GameDev}
-						title="Game Development"
-					/>
-					<ProjectsCard
-						className={css.gridItem}
-						background={FlutterSnips}
-						title="Flutter Snippets"
-					/>
-					<ProjectsCard
-						className={css.gridItem}
-						background={AQIPred}
-						title="AQI Prediction Model"
-					/>
+					{data.map((i, index) => (
+						<ProjectsCard
+							background={i.img}
+							title={i.title}
+							body={i.body}
+							key={index}
+							className={css.gridItem}
+						/>
+					))}
 				</div>
-				<button className="button">More Projects</button>
+				<Link to="/projects" className="button">
+					More Projects
+				</Link>
 			</div>
 		</Element>
 	);

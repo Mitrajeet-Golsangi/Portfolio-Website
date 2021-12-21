@@ -13,6 +13,23 @@ const style = {
 	zIndex: 100,
 };
 
+/**
+ * Hook that alerts clicks outside of the passed ref
+ */
+function useOutsideAlerter(ref, changeState) {
+	React.useEffect(() => {
+		const handleClickOutside = (event) => {
+			if (ref.current && !ref.current.contains(event.target)) {
+				changeState(false);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [ref, changeState]);
+}
+
 const Modal = ({ isVisible }) => {
 	const { color, changeColor } = React.useContext(ColorContext);
 	const handleChangeComplete = (c) => {
@@ -20,14 +37,28 @@ const Modal = ({ isVisible }) => {
 	};
 
 	return isVisible ? (
-		<SketchPicker color={color} onChangeComplete={handleChangeComplete} />
+		<div>
+			<SketchPicker color={color} onChangeComplete={handleChangeComplete} />
+			<button
+				onClick={() => {
+					changeColor("#16c389", data);
+				}}
+			>
+				Reset
+			</button>
+		</div>
 	) : null;
 };
 
 const CustomColorPicker = () => {
 	const [visible, setVisible] = React.useState(false);
+	const [buttonVisible, setButtonVisible] = React.useState(true);
+
+	const wrapperRef = React.useRef(null);
+	useOutsideAlerter(wrapperRef, setVisible);
+
 	return (
-		<div id="colorPicker" style={style}>
+		<div id="colorPicker" style={style} ref={wrapperRef}>
 			<button
 				onClick={() => {
 					setVisible(!visible);
@@ -35,14 +66,18 @@ const CustomColorPicker = () => {
 				style={{
 					fontStyle: "italic",
 					fontFamily: "Lato",
-					color: "var(--paragraph-color)",
+					color: visible ? "red" : "var(--paragraph-color)",
 					backgroundColor: "var(--background)",
 					borderRadius: "10px",
-					border: "1px solid var(--primary)",
+					border: visible ? "1px solid red" : "1px solid var(--primary)",
 					padding: "5px 15px",
+					transition: "0.2s ease-in-out",
+					opacity: buttonVisible || visible === true ? 1 : 0.2,
 				}}
+				onMouseEnter={() => setButtonVisible(true)}
+				onMouseLeave={() => setTimeout(() => setButtonVisible(false), 200)}
 			>
-				Theme
+				{visible ? "Close" : "Theme"}
 			</button>
 			<Modal isVisible={visible} />
 		</div>

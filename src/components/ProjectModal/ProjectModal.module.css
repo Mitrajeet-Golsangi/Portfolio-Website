@@ -34,7 +34,32 @@
 	padding: 5%;
 	line-height: 2vw;
 }
-
+.bodyWrapper a {
+	height: fit-content;
+	width: fit-content;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: var(--primary);
+	font-size: var(--paragraph-size);
+}
+.bodyWrapper a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.bodyWrapper svg {
+	color: red;
+	margin-top: 5%;
+}
+.bodyWrapper div > div {
+	background-color: lightgreen;
+	padding: 0.7% 2.5%;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 50px;
+	margin-top: 5%;
+	margin-left: 5%;
+	font-size: calc(var(--paragraph-size) - 0.4vw);
+}
 @media screen and (max-width: 400px) {
 	.imgWrapper img {
 		display: none;

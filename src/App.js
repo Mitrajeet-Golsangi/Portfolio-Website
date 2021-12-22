@@ -1,4 +1,3 @@
-import { Element } from 'react-scroll';
 import './App.css';
 import Contact from './components/Contact/Contact';
 import ContactSeparator from './components/ContactSeparator/ContactSeparator';
@@ -20,7 +19,6 @@ function App() {
   return (
     <div className="base">
       <ColorContextProvider>
-        <Element id="top" style={{ height: 2 }}></Element>
         <ToTop />
         <CustomColorPicker />
         <TopBar />

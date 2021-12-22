@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import ProjectModal from "../ProjectModal/ProjectsModal";
 import data from "./data";
 
-export const ProjectsCard = ({ background, title, body }) => {
+export const ProjectsCard = ({ background, title, body, url, inDev }) => {
 	const [openModal, setOpenModal] = React.useState(false);
 
 	if (openModal) {
@@ -36,6 +36,8 @@ export const ProjectsCard = ({ background, title, body }) => {
 				title={title}
 				body={body}
 				img={background}
+				url={url}
+				inDev={inDev}
 			/>
 		</div>
 	);
@@ -56,6 +58,8 @@ const Projects = () => {
 							background={i.img}
 							title={i.title}
 							body={i.body}
+							url={i.url}
+							inDev={i.inDev}
 							key={index}
 							className={css.gridItem}
 						/>

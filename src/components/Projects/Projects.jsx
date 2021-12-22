@@ -53,7 +53,7 @@ const Projects = () => {
 				</p>
 				<Project />
 				<div className={css.layout}>
-					{data.map((i, index) => (
+					{data.slice(0, 6).map((i, index) => (
 						<ProjectsCard
 							background={i.img}
 							title={i.title}

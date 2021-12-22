@@ -22,6 +22,8 @@ const MoreProjects = () => {
 							background={i.img}
 							title={i.title}
 							body={i.body}
+							url={i.url}
+							inDev={i.inDev}
 							key={index}
 							className={css.gridItem}
 						/>

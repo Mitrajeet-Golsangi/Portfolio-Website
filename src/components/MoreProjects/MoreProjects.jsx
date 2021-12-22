@@ -4,21 +4,29 @@ import data from "../Projects/data";
 import { ProjectsCard } from "../Projects/Projects";
 
 const MoreProjects = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 	return (
-		<div className={css.wrapper}>
-			<p className={css.heading}>
-				I am Glad you found my projects worth the interest!
-			</p>
-			<div className={css.layout}>
-				{data.map((i, index) => (
-					<ProjectsCard
-						background={i.img}
-						title={i.title}
-						body={i.body}
-						key={index}
-						className={css.gridItem}
-					/>
-				))}
+		<div className="base">
+			<div
+				className={css.wrapper}
+				style={{ paddingLeft: "5%", paddingRight: "5%", overflowX: "hidden" }}
+			>
+				<p className={css.heading}>
+					I am Glad you found my projects worth the interest!
+				</p>
+				<div className={css.layout}>
+					{data.map((i, index) => (
+						<ProjectsCard
+							background={i.img}
+							title={i.title}
+							body={i.body}
+							key={index}
+							className={css.gridItem}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);

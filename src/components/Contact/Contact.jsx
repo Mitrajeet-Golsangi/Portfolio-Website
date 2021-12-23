@@ -49,9 +49,9 @@ const Contact = () => {
 				<PopUp id="emailPopup" success={success} />
 				<form className={css.form} onSubmit={sendEmail} id="contactForm">
 					<input
-						type="text"
-						placeholder="Your Name"
-						name="from_name"
+						type="email"
+						placeholder="Email"
+						name="from_email"
 						required
 					/>
 					<input

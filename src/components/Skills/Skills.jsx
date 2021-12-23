@@ -39,6 +39,7 @@ const SkillsCardWeb = () => {
 							<ul className={css.innerList}>
 								<li>Heroku</li>
 								<li>Github Pages</li>
+								<li>Vercel</li>
 							</ul>
 						</li>
 					</ul>

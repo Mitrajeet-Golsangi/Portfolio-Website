@@ -8,9 +8,10 @@ import MoneyManagerPdf from '../../ProjectPapers/MoneyManager.pdf';
 import GameDevPdf from '../../ProjectPapers/GameDev.pdf';
 
 const data = [
+    // Money Manager
     {
         img: MoneyManager,
-        title: "MoneyManager",
+        title: "Money Manager",
         body:
             "Money Manager is an online platform where various users can simulate the investment experience." +
             " The main function of the platform is to eradicate financial literacy from the youth. <br /> You can " +
@@ -28,6 +29,7 @@ const data = [
         url: MoneyManagerPdf,
         inDev: false
     },
+    // LPG System
     {
         img: LPG,
         title: "LPG Gas Utility System",
@@ -54,6 +56,7 @@ const data = [
         url: null,
         inDev: true
     },
+    // Game Development
     {
         img: GameDev,
         title: "Game Development",
@@ -78,6 +81,7 @@ const data = [
         url: GameDevPdf,
         inDev: false
     },
+    // Flutter Snippets
     {
         img: FlutterSnips,
         title: "Flutter Snippets",
@@ -92,6 +96,7 @@ const data = [
         url: null,
         inDev: true
     },
+    // AQI Prediction
     {
         img: AQIPred,
         title: "AQI Prediction",

@@ -14,17 +14,14 @@ textarea {
 	background-color: white;
 	border-radius: var(--rad);
 	border: 1px solid grey;
-	padding: 3%;
+	padding: 3% 10%;
 	margin-top: 2.5%;
 	margin-bottom: 5%;
 	font-family: "Lato";
 	resize: none;
-}
-
-::placeholder {
-	color: var(--placeholder-color);
-	padding-left: 8%;
-	padding-top: 2%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 .button {

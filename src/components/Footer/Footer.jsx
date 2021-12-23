@@ -34,6 +34,9 @@ const Footer = () => {
 				>
 					<img src={LinkedIn} alt="Linkedin" />
 				</a>
+				<a  href="https://insagram.com.mitrajeet_golsangi/" target="_blank" rel="noreferrer">
+                    <img src="https://i.ibb.co/PCxqXKt/instagram.png" alt="instagram" />
+                </a>
 				<a
 					href="https://medium.com/@mitrajeetgolsangi/"
 					target="_blank"

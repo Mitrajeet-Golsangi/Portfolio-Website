@@ -6,6 +6,7 @@ import AQIPred from "../../assets/Image 4.svg";
 
 import MoneyManagerPdf from '../../ProjectPapers/MoneyManager.pdf';
 import GameDevPdf from '../../ProjectPapers/GameDev.pdf';
+import AQIPredPdf from '../../ProjectPapers/AQI Prediction.pdf';
 
 const data = [
     // Money Manager
@@ -110,7 +111,7 @@ const data = [
             "<li>Random Forest</li>" +
             "<ol><li>With Imputation</li>" +
             "<li>Without Imputation</li></ol></ol>",
-        url: null,
+        url: AQIPredPdf,
         inDev: true
     },
 

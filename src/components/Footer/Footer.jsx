@@ -46,7 +46,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className={css.copyrightRow}>
-				<p>Made by yours truly &copy; 2021</p>
+				<p>Made by yours truly &copy; 2022</p>
 			</div>
 		</div>
 	);

@@ -12,14 +12,12 @@ import ProfSeparator from './components/ProfSeparator/ProfSeparator';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import TopBar from './components/TopBar/TopBar';
-import ToTop from './components/topTop/ToTop';
 
 function App() {
 
   return (
     <div className="base">
       <ColorContextProvider>
-        <ToTop />
         <CustomColorPicker />
         <TopBar />
         <Hero />

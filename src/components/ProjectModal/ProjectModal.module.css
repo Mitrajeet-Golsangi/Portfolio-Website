@@ -60,6 +60,14 @@
 	margin-left: 5%;
 	font-size: calc(var(--paragraph-size) - 0.4vw);
 }
+.closeModal {
+	color: var(--paragraph-color);
+	transition: ease-in-out 0.2s;
+}
+.closeModal:hover {
+	cursor: pointer;
+	color: red;
+}
 @media screen and (max-width: 400px) {
 	.imgWrapper img {
 		display: none;

@@ -1,12 +1,14 @@
-import MoneyManager from "../../assets/Image 1.svg";
-import LPG from "../../assets/LGP_GAS_Detection.svg";
-import GameDev from "../../assets/Image 2.svg";
-import FlutterSnips from "../../assets/Image 3.svg";
-import AQIPred from "../../assets/Image 4.svg";
+import MoneyManager from "../../assets/Project/Image 1.svg";
+import LPG from "../../assets/Project/LGP_GAS_Detection.svg";
+import GameDev from "../../assets/Project/Image 2.svg";
+import FlutterSnips from "../../assets/Project/Image 3.svg";
+import AQIPred from "../../assets/Project/Image 4.svg";
+import NightPatrollingRobot from '../../assets/Project/Night_Patrolling_Robot.png';
 
 import MoneyManagerPdf from '../../ProjectPapers/MoneyManager.pdf';
 import GameDevPdf from '../../ProjectPapers/GameDev.pdf';
 import AQIPredPdf from '../../ProjectPapers/AQI Prediction.pdf';
+import LPGUtility from '../../ProjectPapers/LPG_Gas_Utility.pdf';
 
 const data = [
     // Money Manager
@@ -54,8 +56,8 @@ const data = [
             "<li>Divija Godse</li>" +
             "<li>Vishwajeet Haralkar</li>" +
             "<li>Adityaraj Honraopatil</li></ul>",
-        url: null,
-        inDev: true
+        url: LPGUtility,
+        inDev: false
     },
     // Game Development
     {
@@ -112,8 +114,28 @@ const data = [
             "<ol><li>With Imputation</li>" +
             "<li>Without Imputation</li></ol></ol>",
         url: AQIPredPdf,
-        inDev: true
+        inDev: false
     },
+    // Night Patrolling Robot
+    {
+        img: NightPatrollingRobot,
+        title: "Night Patrolling Robot",
+        body:
+            " This project aims to address the security concerns at night. Most of the" +
+            " robberies happen at night due to poor security, in rural areas apex predators" +
+            " may attack. Thus in order to minimize the harm to human life the robot will" +
+            " scan the area and search for any threats" +
+            "You can check out the project on TinkerCAD Here" +
+            "<iframe width=\"100%\" height=\"400\" src=\"https://www.tinkercad.com/embed/4RWvRK4Ga8u?editbtn=1" +
+            "frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>" +
+            "<h4>Collaborators</h4>" +
+            "<ul><li>Vivek Ghuge</li>" +
+            "<li>Divija Godse</li>" +
+            "<li>Vishwajeet Haralkar</li>" +
+            "<li>Adityaraj Honraopatil</li></ul>",
+        url: null,
+        inDev: true
+    }
 
 ];
 export default data;

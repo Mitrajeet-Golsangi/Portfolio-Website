@@ -51,7 +51,7 @@ const data = [
             " The software is a simple Flutter mobile application which graphically represents the data collected from the sensors" +
             " The flutter application is connected to the local network and fetches the data created from the ESP8266 API" +
             " An addition to the current project is to upload the data to the internet and give the user a remote access." +
-            " For further information on the project you can check out our <a href='https://www.youtube.com/watch?v=CzCsijlDDd8'>explanatory video</a>" +
+            " For further information on the project you can check out our <a target='_blank' href='https://www.youtube.com/watch?v=CzCsijlDDd8'>explanatory video</a>" +
             "<h4>Collaborators</h4>" +
             "<ul><li>Vivek Ghuge</li>" +
             "<li>Divija Godse</li>" +

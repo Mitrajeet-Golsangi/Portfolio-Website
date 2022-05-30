@@ -10,7 +10,7 @@ const TopBar = () => {
 		<nav className={css.topbar}>
 			<Logo className={css.logo} />
 			<ul className={css.topBarList}>
-				<li>
+				<li className={css.hideIfMobile}>
 					<Link smooth={true} duration={800} offset={-60} to="about">
 						About
 					</Link>

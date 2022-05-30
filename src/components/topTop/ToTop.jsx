@@ -1,6 +1,8 @@
 import React from "react";
 import css from "./ToTop.module.css";
 
+import { HiOutlineArrowSmUp } from "react-icons/hi";
+
 const ToTop = () => {
 	const [visible, setVisible] = React.useState(false);
 
@@ -30,7 +32,7 @@ const ToTop = () => {
 			}}
 			disabled={!visible}
 		>
-			^
+			<HiOutlineArrowSmUp size={15} />
 		</button>
 	);
 };

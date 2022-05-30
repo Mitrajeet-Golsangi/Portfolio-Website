@@ -35,11 +35,11 @@
 
 @media screen and (max-width: 400px) {
 	.topBarList {
-		margin-right: 13%;
+		margin-right: 15%;
 	}
 	.topBarList li {
-		padding-left: 8%;
-		padding-right: 8%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 	.topBarList li a {
 		color: var(--primary);
@@ -49,15 +49,16 @@
 	.logo {
 		width: 25%;
 	}
+	.topBarList.hideIfMobile {display: none;}
 }
 
 @media screen and (max-width: 850px) and (min-width: 400px) {
 	.topBarList {
-		margin-right: 10%;
+		margin-right: 8%;
 	}
 	.topBarList li {
-		padding-left: 8%;
-		padding-right: 8%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 	.topBarList li a {
 		color: var(--primary);

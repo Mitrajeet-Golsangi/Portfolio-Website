@@ -1,0 +1,17 @@
+GET /v1/me HTTP/1.1
+Host: api.medium.com
+Authorization: Bearer 266eec662bc53ceee8095517c75c2e39ae9007cdca4449dfaa5718a66d3d5311c
+Content-Type: application/json
+Accept: application/json
+Accept-Charset: utf-8
+
+###
+GET https://api.medium.com/v1/users/1e89ede783c7e9fd7483829e6cd8b7a98b1782dac1c65eb888d627603bef16499/publications HTTP/1.1
+Host: api.medium.com
+Authorization: Bearer 266eec662bc53ceee8095517c75c2e39ae9007cdca4449dfaa5718a66d3d5311c
+Content-Type: application/json
+Accept: application/json
+Accept-Charset: utf-8
+
+###
+Get https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mitrajeetgolsangi HTTP/1.1

@@ -52,7 +52,6 @@ const Modal = ({ isVisible }) => {
 
 const CustomColorPicker = () => {
 	const [visible, setVisible] = React.useState(false);
-	const [buttonVisible, setButtonVisible] = React.useState(true);
 
 	const wrapperRef = React.useRef(null);
 	useOutsideAlerter(wrapperRef, setVisible);
@@ -72,10 +71,9 @@ const CustomColorPicker = () => {
 					border: visible ? "1px solid red" : "1px solid var(--primary)",
 					padding: "5px 15px",
 					transition: "0.2s ease-in-out",
-					opacity: buttonVisible || visible === true ? 1 : 0.2,
+					opacity: 1,
+					cursor: "pointer",
 				}}
-				onMouseEnter={() => setButtonVisible(true)}
-				onMouseLeave={() => setTimeout(() => setButtonVisible(false), 200)}
 			>
 				{visible ? "Close" : "Theme"}
 			</button>

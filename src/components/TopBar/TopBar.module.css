@@ -8,6 +8,7 @@
 }
 .topBarList {
 	list-style-type: none;
+	margin-right: 5%;
 }
 .topBarList li {
 	display: inline;

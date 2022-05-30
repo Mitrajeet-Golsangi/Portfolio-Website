@@ -68,6 +68,15 @@ p {
 	background-color: rgba(0, 0, 0, 0.25);
 }
 
+body {
+	margin: 0;
+	background-color: var(--background);
+
+	font-family: "Lato";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 @media screen and (max-width: 440px) {
 	:root {
 		--paragraph-size: 3.5vw;

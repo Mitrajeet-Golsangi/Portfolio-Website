@@ -3,12 +3,15 @@ import css from "../Projects/Projects.module.css";
 import data from "../Projects/data";
 import { ProjectsCard } from "../Projects/Projects";
 
+import GoBackBar from "../GoBackBar/GoBackBar";
+
 const MoreProjects = () => {
 	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	});
 	return (
 		<div className="base">
+			<GoBackBar />
 			<div
 				className={css.wrapper}
 				style={{ paddingLeft: "5%", paddingRight: "5%", overflowX: "hidden" }}

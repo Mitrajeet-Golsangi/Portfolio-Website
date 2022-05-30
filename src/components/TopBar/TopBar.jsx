@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../assets/Logo.svg";
 
 import css from "./TopBar.module.css";
 import { Link } from "react-scroll";
+import { Link as ReactLink } from "react-router-dom";
 
 const TopBar = () => {
 	return (
@@ -23,6 +24,9 @@ const TopBar = () => {
 					<Link smooth={true} duration={800} offset={-60} to="contact">
 						Contact
 					</Link>
+				</li>
+				<li>
+					<ReactLink to="/blogs">Blogs</ReactLink>
 				</li>
 			</ul>
 		</nav>

@@ -1,4 +1,5 @@
 import './App.css';
+import Posts from './components/Blog/Posts';
 import Contact from './components/Contact/Contact';
 import ContactSeparator from './components/ContactSeparator/ContactSeparator';
 import ContactSeparator2 from './components/ContactSeparator2/ContactSeparator2';
@@ -30,6 +31,7 @@ function App() {
         <ContactSeparator2 />
         <Contact />
         <Footer />
+        <Posts />
       </ColorContextProvider>
     </div>
   );

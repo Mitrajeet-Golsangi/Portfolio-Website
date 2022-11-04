@@ -1,5 +1,4 @@
 import './App.css';
-import Posts from './components/Blog/Posts';
 import Contact from './components/Contact/Contact';
 import ContactSeparator from './components/ContactSeparator/ContactSeparator';
 import ContactSeparator2 from './components/ContactSeparator2/ContactSeparator2';
@@ -15,8 +14,7 @@ import Skills from './components/Skills/Skills';
 import TopBar from './components/TopBar/TopBar';
 
 function App() {
-
-  return (
+	return (
 		<div className="base">
 			<ColorContextProvider>
 				<CustomColorPicker />
@@ -30,7 +28,6 @@ function App() {
 				<Projects />
 				<ContactSeparator2 />
 				<Contact />
-				{/* <Posts /> */}
 				<Footer />
 			</ColorContextProvider>
 		</div>

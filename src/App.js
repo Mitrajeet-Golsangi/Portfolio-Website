@@ -17,24 +17,24 @@ import TopBar from './components/TopBar/TopBar';
 function App() {
 
   return (
-    <div className="base">
-      <ColorContextProvider>
-        <CustomColorPicker />
-        <TopBar />
-        <Hero />
-        <IntroSeparator />
-        <IntroRow />
-        <ProfSeparator />
-        <Skills />
-        <ContactSeparator />
-        <Projects />
-        <ContactSeparator2 />
-        <Contact />
-        <Footer />
-        <Posts />
-      </ColorContextProvider>
-    </div>
-  );
+		<div className="base">
+			<ColorContextProvider>
+				<CustomColorPicker />
+				<TopBar />
+				<Hero />
+				<IntroSeparator />
+				<IntroRow />
+				<ProfSeparator />
+				<Skills />
+				<ContactSeparator />
+				<Projects />
+				<ContactSeparator2 />
+				<Contact />
+				<Posts />
+				<Footer />
+			</ColorContextProvider>
+		</div>
+	);
 }
 
 export default App;

@@ -30,7 +30,7 @@ function App() {
 				<Projects />
 				<ContactSeparator2 />
 				<Contact />
-				<Posts />
+				{/* <Posts /> */}
 				<Footer />
 			</ColorContextProvider>
 		</div>
